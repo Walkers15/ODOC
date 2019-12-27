@@ -1,3 +1,5 @@
+//런타임 에러 처리할 것! num == 0 처리 안하면 에러 발생
+
 import java.io.IOException;
 import java.util.Scanner;
 
