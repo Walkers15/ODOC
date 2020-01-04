@@ -1,4 +1,4 @@
-//서로소 찾는 알고리즘
+//서로소 찾는 알고리즘(13412)
 //메모리 초과 줄이기 대작전! 사실 Math.sqrt메소드로 find문의 loop횟수 더 줄일 수 있긴 한데 맞았길래 걍 냄
 import java.util.*;
 public class jan0420 {
