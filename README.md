@@ -1,9 +1,11 @@
 ODOC
 ====
 ![Alt text](https://img.shields.io/badge/BOJ-ODOC-blueviolet) ![Alt text](https://img.shields.io/badge/Language-Java%20%26%20Kotlin-yellowgreen)
+
 :closed_book:ODOC란?
 --------------------
 백준 사이트(https://www.acmicpc.net/)의 알고리즘 문제들을 하루에 하나씩 푸는 것을 말합니다!
+
 :sparkles:One Day One Code:sparkles:
 ***
 ### 혹시 비어 있는 날을 발견했다면?
