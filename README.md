@@ -9,9 +9,9 @@ ODOC
 :sparkles:One Day One Code:sparkles:
 ***
 ### 혹시 비어 있는 날을 발견했다면?
->📸 @Shoon_100s 로 DM을 보내주세요:exclamation: 그럴싸한 핑계를 대 드립니다:wink:
+>📸 @shoon_100s 로 DM을 보내주세요:exclamation: 그럴싸한 핑계를 대 드립니다:wink:
 ### 왠지 이 문제를 풀어보게 하고 싶다면?
->📸 @Shoon_100s 로 DM을 보내주세요:exclamation: 풀고 리뷰도 달고 밑에 열심히 :sparkles:도 달아서 이름을 써 드립니다!
+>📸 @shoon_100s 로 DM을 보내주세요:exclamation: 풀고 리뷰도 달고 밑에 열심히 :sparkles:도 달아서 이름을 써 드립니다!
 ***
 #### 문제 풀라고 시킨 사람들
 
