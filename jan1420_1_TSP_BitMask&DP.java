@@ -32,6 +32,8 @@ public class jan1420_1 {
             int next = 1 << k;//k번째 마을, 비트연산(visited 에서 비트 빼 오는 데 사용)
             if (map[current][k] == 0 || (visited & next) > 0) continue;
             dp[current][visited] = Math.min(dp[current][visited], tsp(k, visited | next) + map[current][k]);
+            //dp배열에는 비용 저장!(1,4,2,3 1,2,4,3 은 visited도 같지만 비트가 같으므로 둘 중에 더 작은 값이 저장됨)
+            //현재 내가 가지고 있는 값 vs k번째 마을에서 가지고 있는 최소값 + k번째 마을에서 current로 오는 데 드는 
         }
         return dp[current][visited];
     }
