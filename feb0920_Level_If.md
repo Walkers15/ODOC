@@ -1,4 +1,4 @@
-###https://www.acmicpc.net/problem/9498
+### https://www.acmicpc.net/problem/9498
 ```
 fun main() {
     when(readLine()!!.toInt()){
@@ -11,7 +11,7 @@ fun main() {
 }
 ```
    
-###https://www.acmicpc.net/problem/2753
+### https://www.acmicpc.net/problem/2753
 ```
 fun main() {
     val year = readLine()!!.toInt()
@@ -25,7 +25,7 @@ fun main() {
 }
 ```
    
-###https://www.acmicpc.net/problem/10817
+### https://www.acmicpc.net/problem/10817
 ```
 import java.util.Scanner
 
