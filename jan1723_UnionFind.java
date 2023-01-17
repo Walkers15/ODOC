@@ -6,12 +6,6 @@ import java.util.ArrayList;
 public class jan1723_UnionFind {
   public static int[] root;
 
-  /**
-   * 1. 모든 파티를 순회하며 진실을 아는 사람이 있는 경우 안다고 체크
-   * 2. 모든 파티를 순회하며 모든 사람이 진실을 모를 경우 거짓말 가능한 횟수 증가
-   * 
-   * @param args
-   */
   public static void main(String[] args) {
     // 1. 입력 잘 받기
     Scanner sc = new Scanner(System.in);
