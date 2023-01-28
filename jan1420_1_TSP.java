@@ -3,13 +3,13 @@
 //DP 식 세우고 식 연산하는 법 계속 생각해 볼 것
 import java.util.Scanner;
 
-public class jan1420_1 {
+public class jan1420_1_TSP {
     static int[][] map = new int[16][16];
     static int[][] dp = new int[16][1 << 16];
     static int n, visited;
     static int INF = Integer.MAX_VALUE - 1000000;
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
         for (int i = 0; i < n; i++) {

@@ -3,14 +3,14 @@
 import java.util.*;
 
 public class dec3119x {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int vc = sc.nextInt(); // Village Count
         int Capacity = sc.nextInt();
         int bc = sc.nextInt();// boxCount
-        ArrayList<box> arr = new ArrayList<>();
+        ArrayList<box2> arr = new ArrayList<>();
         for (int i = 0; i < bc; i++) {
-            arr.add(new box(sc.nextInt(), sc.nextInt(), sc.nextInt()));
+            arr.add(new box2(sc.nextInt(), sc.nextInt(), sc.nextInt()));
         }
         Collections.sort(arr);
         int tc = 0;// temp Capacity
@@ -30,19 +30,19 @@ public class dec3119x {
     }
 }
 
-class box implements Comparable<box> {
+class box2 implements Comparable<box2> {
     int from;
     int to;
     int count;
 
-    box(int from, int to, int count) {
+    box2(int from, int to, int count) {
         this.from = from;
         this.to = to;
         this.count = count;
     }
 
     @Override
-    public int compareTo(box B) {
+    public int compareTo(box2 B) {
         if (this.to > B.to)
             return 1;
         else if (this.to == B.to) {

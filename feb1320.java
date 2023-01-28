@@ -8,7 +8,7 @@ DFS : 그래프에서 적용할 수 있는 탐색 방식(정형화된 알고리�
 */
 import java.util.Scanner;
 
-public class feb0213 {
+public class feb1320 {
     static int max = Integer.MIN_VALUE;
     static int min = Integer.MAX_VALUE;
     static int count;

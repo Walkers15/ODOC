@@ -4,7 +4,7 @@
 import java.util.*;
 
 public class jan0220_greedy {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int vc = sc.nextInt(); // Village Count
         int Capacity = sc.nextInt();
@@ -14,7 +14,7 @@ public class jan0220_greedy {
         String input;
         String[] inputarr;
         int[] boxdata = new int[3];
-        ArrayList<box> arr = new ArrayList<>();
+        ArrayList<box3> arr = new ArrayList<>();
         for (int i = 0; i < bc; i++) {
             if (!sc.hasNextLine())
                 break;
@@ -23,7 +23,7 @@ public class jan0220_greedy {
             boxdata[0] = Integer.parseInt(inputarr[0]);
             boxdata[1] = Integer.parseInt(inputarr[1]);
             boxdata[2] = Integer.parseInt(inputarr[2]);
-            arr.add(new box(boxdata[0], boxdata[1], boxdata[2]));
+            arr.add(new box3(boxdata[0], boxdata[1], boxdata[2]));
         }
         Collections.sort(arr);
         int min;
@@ -51,19 +51,19 @@ public class jan0220_greedy {
     }
 }
 
-class box implements Comparable<box> {
+class box3 implements Comparable<box3> {
     int from;
     int to;
     int count;
 
-    box(int from, int to, int count) {
+    box3(int from, int to, int count) {
         this.from = from;
         this.to = to;
         this.count = count;
     }
 
     @Override
-    public int compareTo(box B) {
+    public int compareTo(box3 B) {
         if (this.to > B.to)
             return 1;
         else if (this.to == B.to) {
