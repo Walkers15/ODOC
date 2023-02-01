@@ -1,3 +1,4 @@
+
 // https://www.acmicpc.net/contest/problem/931/1
 import java.util.Scanner;
 
@@ -12,5 +13,6 @@ public class jan2923_1 {
         } else {
             System.out.println(320);
         }
+        sc.close();
     }
 }
