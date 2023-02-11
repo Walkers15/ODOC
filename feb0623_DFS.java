@@ -1,10 +1,12 @@
+
 // https://www.acmicpc.net/problem/11724
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class feb0623 {
+public class feb0623_DFS {
     public static ArrayList<ArrayList<Integer>> graph;
     public static boolean[] visited;
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -36,6 +38,7 @@ public class feb0623 {
         }
 
         System.out.println(connectedComponent);
+        sc.close();
     }
 
     public static void dfs(int n) {
