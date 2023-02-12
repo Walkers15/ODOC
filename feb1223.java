@@ -12,5 +12,6 @@ public class feb1223 {
     int p = 8 - sc.nextInt();
 
     System.out.printf("%d %d %d %d %d %d\n", k, q, r, b, n, p);
+    sc.close();
   }
 }
