@@ -1,4 +1,3 @@
-package Feb;
 
 //https://www.acmicpc.net/problem/15650
 //백트래킹은 왜 이렇게 되는 걸까요?
