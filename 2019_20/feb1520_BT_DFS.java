@@ -1,4 +1,3 @@
-package Feb;
 //https://www.acmicpc.net/problem/14889
 
 //백트래킹 DFS
