@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class mar0823_TreeOrder {
+public class mar0923_TreeOrder {
   static StringBuilder sb = new StringBuilder();
 
   static int[] postOrder;
