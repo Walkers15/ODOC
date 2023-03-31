@@ -15,8 +15,6 @@ public class SegmentTree {
   /**
    * 세그먼트 트리 초기화에 사용하는 재귀 함수
    * 
-   * @param a     원본 배열
-   * @param tree  세그먼트 트리 배열
    * @param node  노드 번호
    * @param start 노드에 저장될 원본 배열 인덱스의 시작
    * @param end   노드에 저장될 원본 배열 인덱스의 끝
