@@ -1,5 +1,3 @@
-package DataStructure;
-
 public class SegmentTree {
   private long[] tree;
   private long[] arr;

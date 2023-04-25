@@ -1,5 +1,3 @@
-package Algorithm;
-
 // https://www.acmicpc.net/problem/2252 줄 세우기
 
 import java.io.BufferedReader;
