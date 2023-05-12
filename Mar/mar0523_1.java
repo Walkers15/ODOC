@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/10830
+// https://www.acmicpc.net/problem/10830 행렬 제곱
 package Mar;
 
 import java.io.BufferedReader;
