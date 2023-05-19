@@ -1,18 +1,20 @@
-// https://www.acmicpc.net/problem/11280 2-SAT 3
+// https://www.acmicpc.net/problem/11281 2-SAT 4
 package May;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class May1823_2SAT {
+public class May1923_2SAT4 {
   // 1. i 와 ~i 를 2i / 2i - 1 로 정점 만들기
   // 2. SCC 만들기 (타잔 알고리즘)
   // 3. 한 SCC에 i과 ~i가 동시에 있다면 불가능!
   // 4. SCC를 출력하는게 아니라 각 정점들이 몇 번째 SCC에 있는지만 알면 되므로 따로 그래프 생성하지 않음
+  // 5. 이후 SCC 위상정렬 역순으로 확인하며 값 정하기 (먼저 만나는 값이 ~A라면 A를 true로 설정)
 
   static ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
   static int n, m, sccIndex, labelIndex;
@@ -65,7 +67,38 @@ public class May1823_2SAT {
         return;
       }
     }
-    System.out.println(1);
+
+    StringBuilder sb = new StringBuilder();
+    sb.append("1\n");
+
+    int[][] arr = new int[n * 2][2];
+    for (int i = 0; i < n * 2; i++) {
+      arr[i][0] = scc[i];
+      arr[i][1] = i;
+    }
+
+    // 값 정하기
+    //
+    Boolean[] result = new Boolean[n];
+    Arrays.fill(result, null);
+    Arrays.sort(arr, (arr1, arr2) -> arr1[0] - arr2[0]);
+
+    for (int i = n * 2 - 1; i >= 0; i--) {
+      int cur = arr[i][1];
+      if (result[cur / 2] == null) {
+        result[cur / 2] = (cur % 2 == 0) ? false : true;
+      }
+    }
+
+    for (int i = 0; i < n; i++) {
+      if (result[i]) {
+        sb.append("1 ");
+      } else {
+        sb.append("0 ");
+      }
+    }
+
+    System.out.print(sb);
   }
 
   public static int getNotOf(int x) {
